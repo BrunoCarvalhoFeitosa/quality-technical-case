@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { redirect, useRouter } from "next/navigation";
+import { useRouter } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { signIn } from "next-auth/react"
 import Link from "next/link";
@@ -65,7 +65,7 @@ export const Form = () => {
                     transition: Flip
                 });
 
-                redirect("/");
+                router.push("/");
 
             }
 
