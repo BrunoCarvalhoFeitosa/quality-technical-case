@@ -112,7 +112,7 @@ export const Form = () => {
                                     {...register("email")}
                                 />
                                 {errors.email && (
-                                    <Styled.FormMessageError>
+                                    <Styled.FormMessageError id="email-message-error">
                                         {errors.email.message}
                                     </Styled.FormMessageError>
                                 )}
@@ -136,7 +136,7 @@ export const Form = () => {
                                 </Styled.FormItemButtonPassword>
                             </Styled.FormItemWrapper>
                             {errors.password && (
-                                <Styled.FormMessageError>
+                                <Styled.FormMessageError id="password-message-error">
                                     {errors.password.message}
                                 </Styled.FormMessageError>
                             )}
