@@ -113,12 +113,13 @@ export const Form = () => {
                             <Styled.FormItemWrapper>
                                 <Styled.FormItemInput
                                     type="text"
+                                    id="name"
                                     autoComplete="off"
                                     placeholder="Nome completo"
                                     {...register("name")}
                                 />
                                 {errors.name && (
-                                    <Styled.FormMessageError>
+                                    <Styled.FormMessageError id="name-message-error">
                                         {errors.name.message}
                                     </Styled.FormMessageError>
                                 )}
@@ -131,12 +132,13 @@ export const Form = () => {
                             <Styled.FormItemWrapper>
                                 <Styled.FormItemInput
                                     type="text"
+                                    id="email"
                                     autoComplete="off"
                                     placeholder="Exemplo: email@gmail.com"
                                     {...register("email")}
                                 />
                                 {errors.email && (
-                                    <Styled.FormMessageError>
+                                    <Styled.FormMessageError id="email-message-error">
                                         {errors.email.message}
                                     </Styled.FormMessageError>
                                 )}
@@ -147,6 +149,7 @@ export const Form = () => {
                             <Styled.FormItemWrapper>
                                 <Styled.FormItemInput
                                     type={showPassword ? "text" : "password"}
+                                    id="password"
                                     placeholder="Senha"
                                     {...register("password")}
                                 />
@@ -159,7 +162,7 @@ export const Form = () => {
                                 </Styled.FormItemButtonPassword>
                             </Styled.FormItemWrapper>
                             {errors.password && (
-                                <Styled.FormMessageError>
+                                <Styled.FormMessageError id="password-message-error">
                                     {errors.password.message}
                                 </Styled.FormMessageError>
                             )}
