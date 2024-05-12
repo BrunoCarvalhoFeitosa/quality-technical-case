@@ -106,6 +106,7 @@ export const Form = () => {
                             <Styled.FormItemWrapper>
                                 <Styled.FormItemInput
                                     type="text"
+                                    id="email"
                                     autoComplete="off"
                                     placeholder="Exemplo: email@gmail.com"
                                     {...register("email")}
@@ -122,6 +123,7 @@ export const Form = () => {
                             <Styled.FormItemWrapper>
                                 <Styled.FormItemInput
                                     type={showPassword ? "text" : "password"}
+                                    id="password"
                                     placeholder="Senha"
                                     {...register("password")}
                                 />
