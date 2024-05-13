@@ -1,12 +1,18 @@
 {
-  "name": "quality-tecnical-case",
+  "name": "quality-technical-case",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
+  "engines": {
+    "node": "v21.7.1"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "npx prisma generate && next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "cypress:web": "npx cypress open",
+    "cypress:headless": "npx cypress run --browser chrome"
   },
   "dependencies": {
     "@emailjs/browser": "^4.3.3",
@@ -33,6 +39,7 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "bcrypt": "^5.1.1",
+    "cypress": "^13.9.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "prisma": "^5.13.0",
