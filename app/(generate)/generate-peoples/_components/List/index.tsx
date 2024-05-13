@@ -33,7 +33,7 @@ export const List = ({ currentItems }: ListProps) => {
             <Styled.ListUl>
                 {currentItems.map((people) => (
                     <Styled.ListLi key={people.id}>
-                        <Styled.ListInfo>
+                        <Styled.ListInfo id="people-name">
                             <Styled.ListInfoDataBold>
                                 {people.name}
                             </Styled.ListInfoDataBold>
@@ -43,8 +43,7 @@ export const List = ({ currentItems }: ListProps) => {
                                 <MdOutlineContentCopy />
                             </Styled.ListInfoCopyButton>
                         </Styled.ListInfo>
-
-                        <Styled.ListInfo>
+                        <Styled.ListInfo id="people-username">
                             <Styled.ListInfoData>
                                 <AiOutlineUser />
                                 {people.username}
@@ -55,8 +54,7 @@ export const List = ({ currentItems }: ListProps) => {
                                 <MdOutlineContentCopy />
                             </Styled.ListInfoCopyButton>
                         </Styled.ListInfo>
-
-                        <Styled.ListInfo>
+                        <Styled.ListInfo id="people-phone">
                             <Styled.ListInfoData>
                                 <MdOutlinePhone />
                                 {people.phone}
@@ -67,8 +65,7 @@ export const List = ({ currentItems }: ListProps) => {
                                 <MdOutlineContentCopy />
                             </Styled.ListInfoCopyButton>
                         </Styled.ListInfo>
-
-                        <Styled.ListInfo>
+                        <Styled.ListInfo id="people-email">
                             <Styled.ListInfoData>
                                 <MdOutlineEmail />
                                 {people.email}
@@ -79,8 +76,7 @@ export const List = ({ currentItems }: ListProps) => {
                                 <MdOutlineContentCopy />
                             </Styled.ListInfoCopyButton>
                         </Styled.ListInfo>
-
-                        <Styled.ListInfo>
+                        <Styled.ListInfo id="people-address">
                             <Styled.ListInfoData>
                                 <TbBuildingEstate />
                                 {people.address.street}, {people.address.geo.lat}
@@ -91,8 +87,7 @@ export const List = ({ currentItems }: ListProps) => {
                                 <MdOutlineContentCopy />
                             </Styled.ListInfoCopyButton>
                         </Styled.ListInfo>
-
-                        <Styled.ListInfo>
+                        <Styled.ListInfo id="people-geolocation">
                             <Styled.ListInfoData>
                                 <GrMap />
                                 {people.address.geo.lat} Lat, {people.address.geo.lng} Lng

@@ -12,7 +12,7 @@ export const Pagination = ({ totalPages, setCurrentPage, currentPage }: Paginati
     const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
     return (
-        <Styled.PaginationContainer>
+        <Styled.PaginationContainer id="pagination">
             <Styled.PaginationUl>
                 {Array.from({ length: totalPages }).map((_, index) => (
                     <Styled.PaginationLi key={index}>
