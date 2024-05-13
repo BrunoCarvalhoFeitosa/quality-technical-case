@@ -21,15 +21,17 @@ export const List = ({ currentItems }: ListProps) => {
                             <Styled.ListInfoImage>
                                 <Image
                                     fill
+                                    id="image-source"
                                     sizes="100vw"
                                     src={image.url}
                                     alt={image.title}
                                 />
                             </Styled.ListInfoImage>
-                            <Styled.ListInfoData>
+                            <Styled.ListInfoData id="image-title">
                                 Imagem randômica.
                             </Styled.ListInfoData>
                             <Styled.ListInfoCopyButton
+                                id="image-download-button"
                                 onClick={() => downloadImage(image.url)}
                             >
                                 Download
