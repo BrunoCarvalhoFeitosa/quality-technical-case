@@ -65,8 +65,7 @@ export const Form = () => {
                     transition: Flip
                 });
 
-                router.push("/");
-
+                window.location.assign("/");
             }
 
             if (callback?.error) {
