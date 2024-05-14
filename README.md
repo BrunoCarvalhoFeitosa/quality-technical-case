@@ -2,6 +2,25 @@
 
 Projeto feito com Next.js, Typescript, Cypress, Next-Auth, Prisma, MongoDB e Styled Components.
 
+## 🎉 Vídeos do projeto em funcionamento
+
+Home page
+
+https://github.com/BrunoCarvalhoFeitosa/quality-technical-case/assets/46093815/a52c5c36-c0e4-4188-9938-e0defe4cae51
+
+Login com GitHub
+
+https://github.com/BrunoCarvalhoFeitosa/quality-technical-case/assets/46093815/857e2e01-b45e-4169-8e3b-004e0d905e8b
+
+Login com Google
+
+https://github.com/BrunoCarvalhoFeitosa/quality-technical-case/assets/46093815/fb182f4d-f621-4ba9-8e46-6ef6922ee7cb
+
+Validação de Sessão
+
+https://github.com/BrunoCarvalhoFeitosa/quality-technical-case/assets/46093815/432dd59a-6b5f-4a30-83f8-78efac557264
+
+
 ## 🚀 Começando
 
 Siga as instruções abaixo para clonar este projeto.
