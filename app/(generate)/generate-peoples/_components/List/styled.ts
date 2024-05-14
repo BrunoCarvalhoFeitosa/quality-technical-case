@@ -13,6 +13,7 @@ export const ListUl = styled.ul`
   gap: 25px;
 
   @media only screen and (min-width: 1240px) {
+    justify-content: flex-start;
     flex-direction: row;
     flex-wrap: wrap;
   }
